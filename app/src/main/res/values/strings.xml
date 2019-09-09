@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Mayday</string>
+    <string name="todo">TODO</string>
+    <string name="kakao_app_key">f295c568b66de38e3d7013fa371b96ad</string>
+    <string name="google_app_key">AIzaSyCPphx5VT0EFQKdmZAjn8Be3Y0PBOLo6t8</string>
+    <string name="google_place">AIzaSyDnlrm2MoEy5Mai-kuM5TYHtG6TxQSBFOc</string>
+    <string name="permission_1">Please turn on the [Setting]>[Permission]</string>
+    <string name="permission_2">If you reject Permission, you can not use this service</string>
+    <string name="callNumber">112</string>
+    <string name="facebook_app_key">uRlqUeZm6UKOe1z9Rjp61GHe/go=</string>
+    <string name="youtube_app_key">AIzaSyD983fUJL7uFszrxJ93Z7hCe-jsn2yQiZs</string>
+    <string-array name="sexs">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+</resources>

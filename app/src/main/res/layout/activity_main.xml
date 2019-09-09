@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonstyle">
+
+            <TextView
+                android:id="@+id/base"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/arizonia"
+                android:text="MAYDAY"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+            <TextView
+                android:layout_below="@+id/base"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:fontFamily="@font/bilbo_swash_caps"
+                android:text="Try it Save all"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+
+            <ImageView
+                android:id="@+id/addFriend"
+                android:layout_alignParentRight="true"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_group_add_black_24dp" />
+            <!--<ImageView-->
+                <!--android:id="@+id/youtube"-->
+                <!--android:layout_toLeftOf="@+id/addFriend"-->
+                <!--android:layout_width="60dp"-->
+                <!--android:layout_height="60dp"-->
+                <!--android:src="@drawable/youtube" />-->
+        </RelativeLayout>
+
+        <GridLayout
+            android:columnCount="2"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/id_emergencyCall"
+                android:layout_width = "100dp"
+                android:layout_height = "wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="12dp"
+                app:cardBackgroundColor="#fffafa">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/emergencycall"
+                        android:src="@drawable/ic_phone_forwarded_black_24dp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp" />
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textColor="#000000"
+                        android:text="Emergency Call"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/id_gps"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="12dp"
+                app:cardBackgroundColor="#fffafa">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/gps_image"
+                        android:src="@drawable/ic_my_location_black_24dp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp" />
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textColor="#000000"
+                        android:text="GPS"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/id_weather"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="12dp"
+                app:cardBackgroundColor="#fffafa">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/youtube"
+                        android:src="@drawable/youtube"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp" />
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textColor="#000000"
+                        android:text="Youtube"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/id_warning"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="12dp"
+                app:cardBackgroundColor="#fffafa">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/alarmBtn"
+                        android:src="@drawable/ic_whatshot_black_24dp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp" />
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textColor="#000000"
+                        android:text="Warning"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </GridLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="200sp"-->
+            <!--android:background="@drawable/welcome_back">-->
+
+        <!--</LinearLayout>-->
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/gas_title"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:textColor="@color/lightorangedark"
+                android:layout_marginLeft="45dp"
+                android:src="@drawable/gas3"/>
+
+            <ImageView
+                android:id="@+id/temp_title"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:src="@drawable/temp3"
+                android:layout_marginLeft="50dp"/>
+
+            <ImageView
+                android:id="@+id/hu_title"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:src="@drawable/water1"
+                android:layout_marginLeft="50dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/gasValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginLeft="55dp"
+                android:layout_gravity="left"/>
+
+            <TextView
+                android:id="@+id/tempValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginLeft="80dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/huValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginLeft="97dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnConnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15sp"
+            android:text="Connect"
+            android:background="@drawable/buttonstyle"/>
+        <Switch
+            android:id="@+id/sw1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginLeft="30sp"
+            android:textColor="@color/lightorangedark"
+            android:text="Acceleration sensor   " />
+    </LinearLayout>
+
+
+
+
+</ScrollView>

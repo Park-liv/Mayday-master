@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/splash_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/splash_top"
+            android:layout_width="200sp"
+            android:layout_height="200sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/icon_transparent"/>
+
+        <TextView
+            android:id="@+id/splash_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="60sp"
+            android:textColor="#000000"
+            android:fontFamily="@font/arizonia"
+            android:textStyle="bold"
+            android:text="Mayday"/>
+
+        <TextView
+            android:id="@+id/splash_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:fontFamily="@font/arizonia"
+            android:text="Save you all"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/splash_below"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/splash_logo"
+        android:src="@drawable/rect"/>
+
+</RelativeLayout>

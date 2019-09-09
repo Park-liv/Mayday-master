@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="220dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    android:layout_gravity="center">
+    
+    <TextView
+        android:id="@+id/txtclose"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:text="X"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:background="@drawable/circlex"/>
+
+    <GridLayout
+        android:columnCount="3"
+        android:rowCount="1"
+        android:layout_width="260dp"
+        android:layout_height="120dp"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="true">
+
+        <android.support.v7.widget.CardView
+            android:layout_width = "30dp"
+            android:layout_height = "wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="12dp"
+            app:cardBackgroundColor="#fffafa">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/burn"
+                    android:src="@drawable/burn"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width = "30dp"
+            android:layout_height = "wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="12dp"
+            app:cardBackgroundColor="#fffafa">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/cpr"
+                    android:src="@drawable/cpr"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width = "30dp"
+            android:layout_height = "wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="12dp"
+            app:cardBackgroundColor="#fffafa">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ext"
+                    android:src="@drawable/ext"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BURN"
+            android:layout_marginLeft="20dp"
+            android:textColor="#ffffff" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CPR"
+            android:layout_marginLeft="60dp"
+            android:textColor="#ffffff"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EXTINGUISHER"
+            android:layout_marginLeft="30dp"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+</LinearLayout>

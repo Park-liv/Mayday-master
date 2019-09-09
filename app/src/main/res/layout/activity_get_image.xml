@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/profile_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="PROFILE PHOTO"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Pick your own photo up!"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_marginTop="10dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/ic_add_a_photo_black_24dp"
+        android:layout_gravity="center"
+        android:maxHeight="120dp"
+        android:maxWidth="120dp" />
+
+    <LinearLayout
+        android:id="@+id/llBottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/btnGallery"
+            android:text="Gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonstyle"/>
+
+        <Button
+            android:id="@+id/btnCamera"
+            android:layout_marginLeft="20dp"
+            android:text="Camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonstyle"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="PROFILE"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/line_background"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_email_black_24dp"
+                android:layout_gravity="center"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/user_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Input Your Email Here"
+                    android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_phone_android_black_24dp" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/user_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Input Your Phone Number Here"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_wc_black_24dp"
+                android:layout_gravity="center"/>
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_assignment_ind_black_24dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:hint="Select your birthday"
+                android:id="@+id/tvDate"
+                android:layout_gravity="center"
+                android:textSize="20dp"/>
+
+            <!--<TextView-->
+                <!--android:id="@+id/ageCount"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:textSize="20dp" />-->
+
+            <!--</DatePicker>-->
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/prevToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_gravity="center"
+            android:text="Prev"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/rectangular_pink"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/nextToMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:text="Next"
+            android:textSize="15dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/rectangular_pink"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:fillViewport="true"
+    android:background="@drawable/test3">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <!--<ImageView android:src="@drawable/logo_transparent1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="180dp"-->
+            <!--android:layout_marginBottom="24dp"-->
+            <!--android:layout_gravity="center_horizontal" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bilbo_swash_caps"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="75dp"
+            android:layout_marginTop="20dp"
+            android:text="MAYDAY"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <!-- Email Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="Username"
+                android:textColor="#ffffff"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Password Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Password" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:text="Sign in"
+            android:textSize="15dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/rectangular_pink"/>
+
+        <com.kakao.usermgmt.LoginButton
+            android:id="@+id/btn_kakao_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/btn_facebook_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:textSize="25sp"/>
+
+        <TextView android:id="@+id/link_signup"
+            android:layout_marginTop="30dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Don't have an account? Sign Up"
+            android:gravity="center"
+            android:textSize="16dip"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+</ScrollView>

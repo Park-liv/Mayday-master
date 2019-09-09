@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/profile_background">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="40sp">
+
+        <ImageView android:src="@drawable/ic_person_pin_white_24dp"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:text="Enter your friend's info"
+            android:textColor="@color/lightorangedark"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="8dp">
+        <EditText android:id="@+id/friend1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:inputType="textCapWords"
+            android:hint="Friend's Name"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="8dp">
+        <EditText android:id="@+id/friend1phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:inputType="number"
+            android:hint="Friend's Cell phone Number"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/registerfriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_gravity="center"
+        android:text="Register"
+        android:background="@drawable/buttonstyle"/>
+</LinearLayout>
